@@ -94,13 +94,16 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 .js .rv.in{opacity:1;transform:none}
 @media(max-width:760px){nav ul{display:none}.row{grid-template-columns:1fr;gap:6px}.stat{border-right:0;border-bottom:1px solid var(--line)}.hero.wrap{padding-top:60px}section.wrap{padding-top:70px}}
 </style>
+  <link rel="stylesheet" href="extra.css">
 </head>
 <body>
-<nav><div class="wrap"><a class="logo" href="#top"><i></i>Sanket Tikhande</a>
+  <canvas id="bg"></canvas><div class="side l"></div><div class="side r"></div>
+  <nav><div class="wrap"><a class="logo" href="#top"><i></i>Sanket Tikhande</a>
 <ul><li><a href="#about">About</a></li><li><a href="#impact">Impact</a></li><li><a href="#work">Work</a></li><li><a href="#services">Services</a></li><li><a href="#career">Career</a></li></ul>
 <a class="pill cream" href="#contact">Let's talk</a></div></nav>
 
 <header class="hero wrap" id="top">
+  <div class="me"><img src="sanket.png" alt="Sanket Tikhande"></div>
 <div class="tag"><i></i>Taking select freelance AI projects</div>
 <h1>I build <em>GenAI systems</em> that actually ship.</h1>
 <p class="lead">AI/ML Sr. Engineering Manager, GenAI Architect and AI Consultant. 14+ years of engineering leadership, from RAG pipelines at sub-1s latency to agentic workflows in production.</p>
@@ -175,9 +178,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <h2>Fourteen years, <span>one direction.</span></h2>
 <div class="rows">
 <div class="row"><div class="yr">2024 – Present</div><div><h3>Sr. AI/ML Engineering Manager</h3><p>Leading 12-member team · Enterprise RAG · Agentic AI · Conversational AI</p></div></div>
-<div class="row"><div class="yr">2020 – 2024</div><div><h3>Senior Engineering Manager / GenAI Architect</h3><p>InsurTech &amp; SaaS · LLM agents · Onsite: 🇮🇩 🇻🇳 🇭🇰 🇹🇭</p></div></div>
-<div class="row"><div class="yr">2016 – 2020</div><div><h3>Engineering Lead</h3><p>SaaS &amp; Hospitality · Team scaling · Python &amp; Ruby on Rails</p></div></div>
-<div class="row"><div class="yr">2015 – 2016</div><div><h3>Software Developer / Programmer Analyst</h3><p>C2L Biz Solutions · FWD Hong Kong · Sequis</p></div></div>
+<div class="row"><div class="yr">2020 – 2023</div><div><h3>Tech Lead</h3><p>InsurTech &amp; SaaS · LLM agents</p></div></div>
+<div class="row"><div class="yr">2015 – 2020</div><div><h3>Programmer Analyst</h3><p>SaaS &amp; Hospitality · Team scaling · Python &amp; Ruby on Rails · Onsite: 🇮🇩 🇻🇳 🇭🇰 🇹🇭</p></div></div>
 <div class="row"><div class="yr">2012 – 2015</div><div><h3>Software Developer</h3><p>Sodel Solutions Pvt Ltd</p></div></div>
 </div>
 <div class="countries">
@@ -215,5 +217,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.08});
 document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
 </script>
+  <script src="bg.js"></script>
 </body>
 </html>
