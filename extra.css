@@ -1,0 +1,14 @@
+.hero.wrap{position:relative}
+.me{position:absolute;right:24px;top:70px;width:330px;height:410px;border-radius:28px;overflow:hidden;background:#ede7d9;border:2px solid #d5a021;box-shadow:0 0 70px rgba(213,160,33,.35)}
+.me img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.hero h1{max-width:640px;font-size:clamp(2.4rem,5vw,4.2rem)}
+.hero .lead{max-width:600px}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+.side{position:fixed;top:0;bottom:0;width:140px;z-index:-1;pointer-events:none}
+.side.l{left:0;background:linear-gradient(90deg,rgba(237,231,217,.16),rgba(213,160,33,.07) 45%,transparent)}
+.side.r{right:0;background:linear-gradient(270deg,rgba(237,231,217,.16),rgba(213,160,33,.07) 45%,transparent)}
+.side:after{content:"";position:absolute;top:0;bottom:0;width:2px;background:linear-gradient(180deg,transparent,#d5a021,#ede7d9,#d5a021,transparent);opacity:.7;animation:glow 5s ease-in-out infinite}
+.side.l:after{left:0}
+.side.r:after{right:0}
+@keyframes glow{50%{opacity:.25}}
+@media(max-width:900px){.me{position:relative;right:auto;top:auto;margin:0 0 28px;width:240px;height:300px}.side{width:50px}}
